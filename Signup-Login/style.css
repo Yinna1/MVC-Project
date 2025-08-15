@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+:root {
+  --accent-color: #1f1f1f;
+  --base-color: white;
+  --text-color: black;
+  --input-color: #ede9fd;
+  --input-color2: #f8f6ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 12px;
+  font-family: 'Kanit', sans-serif;
+  color: var(--text-color);
+  text-align: center;
+}
+
+body {
+  min-height: 100vh;
+  background: #EEAECA;
+  background: linear-gradient(45deg, rgba(238, 174, 202, 1) 0%, rgba(192, 181, 218, 1) 50%, rgba(148, 187, 233, 1) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  box-sizing: border-box;
+  background-color: var(--base-color);
+  height: 100%;
+  
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+form {
+  width: min(300px, 100%);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+form>div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+form label {
+  flex-shrink: 0;
+  height: 50px;
+  width: 50px;
+  background-color: var(--input-color);
+  fill: var(--base-color);
+  border-radius: 10px 0 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+form input {
+  box-sizing: border-box;
+  flex-grow: 1;
+  min-width: 0;
+  height: 50px;
+  padding: 1em;
+  font: inherit;
+  border-radius: 0 10px 10px 0;
+  border: 2px solid var(--input-color2);
+  border-left: none;
+  background-color: var(--input-color2);
+  transition: 150ms ease;
+}
+
+form input:hover {
+  border-color: var(--input-color);
+}
+
+form input:focus {
+  outline: none;
+  border-color: var(--text-color);
+}
+
+form input::placeholder {
+  color: var(--text-color);
+}
+
+div:has(input:focus)>label {
+  background-color: var(--text-color);
+}
+
+form>div:focus-within label svg {
+  fill: var(--base-color);
+}
+
+form input::placeholder {
+  color: var(--text-color);
+}
+
+form button {
+  border: none;
+  border-radius: 1000px;
+  padding: 0.9em 4em;
+  background-color: var(--input-color);
+  font: inherit;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 150ms ease;
+}
+
+form button:hover {
+  background-color: var(--text-color);
+  color: var(--base-color);
+}
+
+form button:focus {
+  outline: none;
+  background-color: var(--text-color);
+  color: var(--base-color);
+}
+
+a {
+  text-decoration: none;
+  color: #8a2be2;
+  font-weight: 600;
+
+}
+.forgot-password-link {
+  display: flex;
+  justify-content: flex-end;
+}
+.forgot-password-link a {
+  cursor: pointer;
+}
+a:hover {
+  text-decoration: underline;
+}
+form div.incorrect label {
+  background-color: rgb(255, 103, 103);
+}
+form div.incorrect input {
+  border-color: rgb(255, 103, 103);
+}
+#error-message {
+  color: red;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  text-align: center;
+}

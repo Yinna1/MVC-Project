@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="login">Login</title>
+  <link rel="stylesheet" href="/Signup-Login/style.css">
+  <script type="text/javascript" src="/Signup-Login/validation.js" defer></script>
+
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <h1>Login</h1>
+    <p id="error-message"></p>
+    <form id="form">
+      <div>
+        <label for="id-card-input"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+            width="24px" fill="#1f1f1f">
+            <path
+              d="M560-440h200v-80H560v80Zm0-120h200v-80H560v80ZM200-320h320v-22q0-45-44-71.5T360-440q-72 0-116 26.5T200-342v22Zm160-160q33 0 56.5-23.5T440-560q0-33-23.5-56.5T360-640q-33 0-56.5 23.5T280-560q0 33 23.5 56.5T360-480ZM160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Z" />
+          </svg>
+        </label>
+        <input type="text" name="id-card-input" id="id-card-input" placeholder="เลขบัตรประจำตัวนักเรียน">
+      </div>
+      <div>
+        <label for="password-input"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+            width="24px" fill="#1f1f1f">
+            <path
+              d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm240-200q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80Z" />
+          </svg>
+        </label>
+        <input type="password" name="password" id="password-input" placeholder="รหัสผ่าน">
+      </div>
+      <div class="forgot-password-link">
+        <a href="/Signup-Login/resetpassword.html">ลืมรหัสผ่าน</a>
+      </div>
+      <button type="submit">เข้าสู่ระบบ</button>
+    </form>
+    <p>ลงทะเบียนบัญชี<a href="signup.html">สมัครเข้าใช้งาน</a></p>
+  </div>
+</body>
+
+</html>
