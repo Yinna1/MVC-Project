@@ -39,6 +39,26 @@ main p {
   margin-top: 5px;
   margin-bottom: 15px;
 }
+.login-container{
+  padding: 6px 8px 2px 0px;
+  margin: 0;
+}
+.login-button {
+  display: inline-block;
+  padding: 6px 14px;
+  background-color: #b48888; /* สีพื้นหลังปุ่ม (ตัวอย่าง) */
+  color: #ffffff; /* สีตัวอักษร */
+  text-decoration: none; /* เอาเส้นใต้ออก */
+  border-radius: 30px; /* ทำให้ขอบมน */
+  font-weight: 600px;
+
+  white-space: nowrap; /* ป้องกันการขึ้นบรรทัดใหม่ */
+}
+
+/* ทำให้ปุ่มเปลี่ยนสีเมื่อเอาเมาส์ไปชี้ */
+.login-button:hover {
+  background-color: #0056b3;
+}
 #second-menu {
   background-color: var(--input-color2);
   padding-bottom: 20px;
@@ -238,7 +258,7 @@ main p {
   cursor: pointer;
   display: block;
   position: relative;
-  right: -px;
+  right: -10px;
 }
 #overlay {
   display: none;
