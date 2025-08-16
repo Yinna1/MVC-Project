@@ -41,13 +41,14 @@ main p {
 }
 #second-menu {
   background-color: var(--input-color2);
-  padding-bottom:px;
+  padding-bottom: 20px;
+  display: block;
 }
 .search {
   width: max-content;
   display: flex;
   align-items: center;
-  padding: 14px;
+  padding: 12px;
   border-radius: 28px;
   background: white;
   transition: box-shadow 0.25s;
@@ -64,8 +65,9 @@ main p {
   outline: none;
   border: none;
   background: transparent;
+  display: flex;
   width: 100%;
-  min-width: 80px;
+  min-width: 0;
 }
 
 .search-input::placeholder {
@@ -242,6 +244,11 @@ main p {
   display: none;
 }
 
+@media(max-width: 768px){
+.search {
+  width: 70%;
+}
+}
 @media(max-width: 450px) {
   body {
     display: block;
