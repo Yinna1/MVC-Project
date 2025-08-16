@@ -1,19 +1,12 @@
-const toggleButton = document.getElementById('toggle-btn')
+const closeButton = document.getElementById('close')
 const sidebar = document.getElementById('sidebar')
 const openSidebarButton = document.getElementById('open-sidebar-button')
 
 const media = window.matchMedia("(width < 450px)")
 
 
-function toggleSidebar(){
-  if(media.matches) {
-    closeSidebar();
-    return;
-  }
-
-  sidebar.classList.toggle('close')
-  toggleButton.classList.toggle('rotate')
-  
+function closeMenu(){
+closeSidebar()
   Array.from(sidebar.getElementsByClassName('show')).forEach(ul => {
     ul.classList.remove('show')
     ul.previousElementSibling.classList.remove('rotate')
@@ -24,10 +17,10 @@ function toggleSubMenu(button){
   button.nextElementSibling.classList.toggle('show')
   button.classList.toggle('rotate')
   
-  if(sidebar.classList.contains('close')){
-    sidebar.classList.toggle('close')
-    toggleButton.classList.toggle('rotate')
-  }
+  // if(sidebar.classList.contains('close')){
+  //   sidebar.classList.toggle('close')
+  //   toggleButton.classList.toggle('rotate')
+  // }
 }
 
 media.addEventListener('change', (e) => updateNavbar(e));
