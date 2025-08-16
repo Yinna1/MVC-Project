@@ -1,8 +1,6 @@
 /* Importing Google fonts - Inter */
 .container{
   display: flex;
-  width: 100%;
-  max-width: 1500px;
   border: 1px solid var(--input-color);
   border-radius: 1em;
   margin-bottom: 20px;
@@ -16,7 +14,6 @@
   justify-content: center;
   gap: 1.5rem; /* เพิ่มช่องว่างระหว่าง card */
   padding: 20px 10px;
-  max-width: 1300px;
   margin: 0 auto;
   overflow: hidden;
 }
