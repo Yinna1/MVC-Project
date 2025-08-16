@@ -46,16 +46,16 @@ main p {
 .login-button {
   display: inline-block;
   padding: 6px 14px;
-  background-color: #b48888; /* สีพื้นหลังปุ่ม (ตัวอย่าง) */
-  color: #ffffff; /* สีตัวอักษร */
-  text-decoration: none; /* เอาเส้นใต้ออก */
-  border-radius: 30px; /* ทำให้ขอบมน */
+  background-color: #b48888; 
+  color: #ffffff; 
+  text-decoration: none; 
+  border-radius: 30px; 
   font-weight: 600px;
 
-  white-space: nowrap; /* ป้องกันการขึ้นบรรทัดใหม่ */
+  white-space: nowrap; 
 }
 
-/* ทำให้ปุ่มเปลี่ยนสีเมื่อเอาเมาส์ไปชี้ */
+
 .login-button:hover {
   background-color: #0056b3;
 }
