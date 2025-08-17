@@ -18,7 +18,7 @@
 
 html {
   line-height: 1.5rem;
-  scrollbar-gutter: stable;
+  /* scrollbar-gutter: stable; */
 }
 
 body {
@@ -40,24 +40,23 @@ main p {
   margin-bottom: 15px;
 }
 .login-container{
-  padding: 6px 8px 2px 0px;
-  margin: 0;
+  padding: 12px 16px 2px 0px;
 }
 .login-button {
   display: inline-block;
   padding: 6px 14px;
-  background-color: #b48888; 
-  color: #ffffff; 
+  background-color: #ffffff; 
+  color: #000000; 
   text-decoration: none; 
-  border-radius: 30px; 
+  border-radius: 100px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   font-weight: 600px;
-
   white-space: nowrap; 
 }
 
 
 .login-button:hover {
-  background-color: #0056b3;
+  background-color: var(--border-color);
 }
 #second-menu {
   background-color: var(--input-color2);
@@ -75,6 +74,7 @@ main p {
   max-width: 600px;
   width: 100%;
   margin: 0 auto;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   /* margin-bottom: 40px; */
 }
 
@@ -106,7 +106,7 @@ main p {
 
 #tap-menu {
   display: flex;
-  flex-grow: 1;
+  width: 100%;
   background-color: var(--input-color2);
 }
 #menu-list{
@@ -268,12 +268,18 @@ main p {
 .search {
   width: 70%;
 }
+.login-container{
+  padding: 12px 24px 20px 0px;
+  }
 }
+
 @media(max-width: 450px) {
   body {
     display: block;
   }
-
+  .login-container{
+  padding: 12px 24px 20px 0px;
+  }
   .search {
     max-width: 290px;
     width: 100%;
@@ -310,7 +316,7 @@ main p {
     overflow-y: auto;
     transition: left 300ms ease-out;
   }
-
+  }
   /* #sidebar{
     background-color: var(--input-color2);
     position: fixed;
@@ -337,4 +343,3 @@ main p {
     z-index: 100;
     display: none;
   }
-}
