@@ -1,12 +1,12 @@
 /* Importing Google fonts - Inter */
 .container{
   display: flex;
-  /* border: 1px solid var(--input-color); */
+  justify-content: center;
+  align-items: center;
   border-radius: 1em;
   margin-bottom: 20px;
   padding: min(3em, 15%);
-
-  h2,  p{margin-top: 1em}
+  h2, p{margin-top: 1em};
 }
 .wrapper {
   display: flex;
@@ -162,7 +162,8 @@
 }
 
 /* Responsive media query code for small screens */
-@media (max-width: 1024px) {
+@media (min-width: 1024px) {
+
   .container {
     padding: 2em;
   }
@@ -183,7 +184,7 @@
   }
 
   .wrapper {
-    padding: 10px;
+    margin-bottom: 25px;
   }
 }
 

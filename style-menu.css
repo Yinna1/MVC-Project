@@ -30,6 +30,7 @@ body {
 }
 
 main {
+  display: flex;
   padding: min(30px, 7%);
   flex: 1;
 }
@@ -274,9 +275,6 @@ main p {
 }
 
 @media(max-width: 450px) {
-  body {
-    display: block;
-  }
   .login-container{
   padding: 12px 24px 20px 0px;
   }
