@@ -18,20 +18,20 @@
 
 html {
   line-height: 1.5rem;
-  /* scrollbar-gutter: stable; */
 }
 
 body {
-  /* min-height: 100vh;
-  min-height: 100dvh; */
+  min-height: 100vh;
+  min-height: 100dvh;
   background-color: var(--base-color);
   color: var(--text-color);
-  display: block;
-  /* grid-template-columns: auto 1fr; */
+  display: flex;
+  flex-direction: column;
 }
 
 main {
   padding: min(30px, 7%);
+  flex: 1;
 }
 
 main p {

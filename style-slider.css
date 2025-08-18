@@ -1,7 +1,7 @@
 /* Importing Google fonts - Inter */
 .container{
   display: flex;
-  border: 1px solid var(--input-color);
+  /* border: 1px solid var(--input-color); */
   border-radius: 1em;
   margin-bottom: 20px;
   padding: min(3em, 15%);
