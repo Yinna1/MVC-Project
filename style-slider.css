@@ -103,6 +103,7 @@
   background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
   box-shadow: 0 4px 10px rgba(99, 102, 241, 0.2);
   transition: all 0.3s ease;
+  white-space: nowrap;
 }
 
 .card .card-button:hover {
