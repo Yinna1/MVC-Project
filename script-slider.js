@@ -3,11 +3,11 @@ new Swiper(".wrapper", {
   spaceBetween: 30,
 
   // Autoplay
-  // autoplay: {
-  //   delay: 5000,
-  //   disableOnInteraction: false,
-  //   pauseOnMouseEnter: true,
-  // },
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
+  },
 
   // Pagination bullets
   pagination: {
